@@ -1,0 +1,45 @@
+#main-grid {
+  display: grid;
+}
+#main-header {
+  height: 110px;
+}
+#main-title {
+  height: 38px;
+  width: 250px;
+}
+#title-logo{
+background-color:green;
+height: 38px;
+width: 38px;
+border-radius: 50%;
+}
+#title-text {
+  position: relative;
+  color:green;
+}
+#main-search {
+  width: 350px;
+  height: 39px;
+  border: solid, 1px;
+}
+#images {
+  margin-left: 30px;
+  height: 715px;
+  width: 663px;
+}
+#checkout {
+
+}
+#navigation-bar {
+
+}
+#description {
+
+}
+#reviews {
+
+}
+#qa {
+
+}
