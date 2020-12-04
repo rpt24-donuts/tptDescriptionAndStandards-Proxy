@@ -1,35 +1,188 @@
 #main-grid {
-  display: grid;
+  margin: auto;
+  width: 950px;
+  font-family: sans-serif;
+  height: 5000px;
 }
 #main-header {
-  height: 110px;
+  padding: 12px 0px 12px 0px;
 }
 #main-title {
   height: 38px;
-  width: 250px;
+  margin-bottom: 12px;
 }
 #title-logo{
-background-color:green;
-height: 38px;
-width: 38px;
-border-radius: 50%;
+  background-color:#0aa96c;
+  height: 38px;
+  width: 38px;
+  border-radius: 50%;
+  float: left;
 }
 #title-text {
-  position: relative;
-  color:green;
+  height: 38px;
+  line-height: 38px;
+  width: 220px;
+  color:#0aa96c;
+  font-size: 20px;
+  padding-left: 5px;
+  float: left;
+}
+#main-nav-spacer {
+  height: 38px;
+  width: 95px;
+  float: left;
+}
+.main-nav-button {
+  height: 38px;
+  font-size: 13px;
+  font-weight: 300;
+  color: #777;
+  cursor: pointer;
+  display: table-cell;
+  vertical-align: middle;
+  padding-left: 21px;
+}
+#main-browse {
+  width: 112px;
+  height: 42px;
+  border: solid #DDDDDD 1px;
+  border-radius: 3px;
+  background-color: white;
+  margin-right: 9px;
+  margin-left: 9px;
+  font-size: 15px;
+  color: #222;
+  cursor: pointer;
+  float: left;
 }
 #main-search {
-  width: 350px;
+  width: 450px;
   height: 39px;
-  border: solid, 1px;
+  float: left;
+}
+#search-input {
+  height: 38px;
+  width: 300px;
+  border: solid #DDDDDD 1px;
+  border-radius: 3px 0px 0px 3px;
+  float: left;
+  margin-left: 9px;
+}
+#search-input::placeholder {
+  font-size: 16px;
+}
+#search-button {
+  background-color: #0aa96c;
+  width: 51px;
+  height: 42px;
+  border: 1px;
+  border-radius: 3px;
+  position: relative;
+  left: -2px;
+  cursor: pointer;
+  float: left;
+}
+#search-nav-spacer {
+  height: 39px;
+  width: 190px;
+  float: left;
+}
+.search-nav-buttons {
+  height: 39px;
+  font-size: 15px;
+  font-weight: 300;
+  cursor: pointer;
+  display: table-cell;
+  vertical-align: middle;
+  padding: 0px 9px 0px 9px;
+}
+hr {
+  border: 1px solid #DDD;
 }
 #images {
-  margin-left: 30px;
   height: 715px;
   width: 663px;
+  float: left;
 }
 #checkout {
-
+  position: sticky;
+  top: 0px;
+  width: 288px;
+  height: 614px;
+  padding: 40px 0px 0px 18px;
+  margin-left: auto;
+}
+#checkout-cart {
+  width: 288px;
+  height: 300px;
+  background-color: #f5f5f5;
+  border-radius: 3px;
+  margin-bottom: 24px;
+}
+#checkout-price {
+  padding-top: 36px;
+  font-size: 30px;
+  text-align: center;
+}
+#checkout-download {
+  font-size: 14px;
+  color: #777;
+  text-align: center;
+}
+#checkout-add {
+  background-color: #0aa96c;
+  width: 240px;
+  height: 42px;
+  border: 1px;
+  border-radius: 3px;
+  /* padding: 12px 18px; */
+  font-size: 16px;
+  color: white;
+  cursor: pointer;
+  margin: 24px 0px 12px 23px;
+}
+#checkout-share {
+  background-color: white;
+  width: 238px;
+  height: 40px;
+  border: solid 1px #DDD;
+  border-radius: 3px;
+  /* padding: 12px 18px; */
+  font-size: 16px;
+  color: #777;
+  cursor: pointer;
+  margin: 0px 0px 36px 23px;
+}
+#checkout-list {
+  text-align: center;
+  font-size: 16px;
+  font-weight: 300;
+  color: #777;
+  cursor: pointer;
+}
+#plus {
+  font-size: 18px;
+  font-weight: 800;
+}
+#checkout-resources {
+  width: 240px;
+  height: 100px;
+  padding: 24px;
+  background-color: #f5f5f5;
+  border-radius: 3px;
+}
+#resources-digital {
+  text-align: center;
+  font-size: 16px;
+  padding-bottom: 12px;
+  color: #222;
+}
+#resources-text {
+  text-align: center;
+  font-size: 15px;
+  font-weight: 300;
+  color: #777;
+  line-height: 1.5;
 }
 #navigation-bar {
 
