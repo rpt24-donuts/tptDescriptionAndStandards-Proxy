@@ -100,7 +100,7 @@ hr {
   border: 1px solid #DDD;
 }
 #images {
-  height: 715px;
+  height: 640px;
   width: 663px;
   float: left;
 }
@@ -187,12 +187,18 @@ hr {
 #navigation-bar {
 
 }
-#description {
-
+#root {
+  height: 640px;
+  width: 663px;
+  float: left;
 }
-#reviews {
-
+#review {
+  height: 640px;
+  width: 663px;
+  float: left;
 }
-#qa {
-
+#QandA {
+  height: 640px;
+  width: 663px;
+  float: left;
 }
