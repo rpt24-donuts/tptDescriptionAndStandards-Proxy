@@ -6,7 +6,6 @@ const app = express();
 const port = 3000;
 
 app.use(express.static(path.join(__dirname, '/public')));
-app.use(express.static('http://54.204.140.50:3003/style.css'));
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 
@@ -15,29 +14,47 @@ app.get('/products/:id', (req, res) => {
 });
 
 app.get('/images', async (req, res)=>{
-  let bundle = await axios.get('http://54.204.140.50:3003/bundle.js');
-  res.send(bundle.data);
+  axios.get('http://54.204.140.50:3003/bundle.js')
+  .then(bundle => {
+    res.send(bundle.data);
+  })
+  .catch (err => {
+    console.log(err);
+    res.end();
+  })
 });
 
-// app.get('/images-style', async (req, res)=>{
-//   let css = await axios.get('http://54.204.140.50:3003/style.css');
-//   console.log(css.data)
-//   res.send(css.data);
-// });
-
 app.get('/description', async (req, res)=>{
-  let bundle = await axios.get('http://18.222.237.222:3002/bundle.js');
-  res.send(bundle.data);
+  axios.get('http://18.222.237.222:3002/bundle.js')
+  .then(bundle => {
+    res.send(bundle.data);
+  })
+  .catch (err => {
+    console.log(err);
+    res.end();
+  })
 });
 
 app.get('/reviews', async (req, res)=>{
-  let bundle = await axios.get('http://18.144.61.129:3001/bundle.js');
-  res.send(bundle.data);
+  axios.get('http://18.144.61.129:3001/bundle.js')
+  .then(bundle => {
+    res.send(bundle.data);
+  })
+  .catch (err => {
+    console.log(err);
+    res.end();
+  })
 });
 
 app.get('/qanda', async (req, res)=>{
-  let bundle = await axios.get('http://18.223.239.5:3004/bundle.js');
-  res.send(bundle.data);
+  axios.get('http://18.223.239.5:3004/bundle.js')
+  .then(bundle => {
+    res.send(bundle.data);
+  })
+  .catch (err => {
+    console.log(err);
+    res.end();
+  })
 });
 
 app.listen(port);
