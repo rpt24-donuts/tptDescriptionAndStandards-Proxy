@@ -22,7 +22,6 @@ npm install
 
 Start the services under [Related Projects](#Related).
 
-```
 Start the proxy server
 ```
 npm run start
