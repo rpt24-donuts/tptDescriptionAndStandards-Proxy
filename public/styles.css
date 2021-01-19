@@ -243,6 +243,7 @@ hr {
   border-bottom: 1px solid #DDD;
   position: sticky;
   top: 0px;
+  z-index: 5;
 }
 .link {
   margin: 0px 24px 0px 24px;
@@ -258,7 +259,6 @@ a {
   float: left;
   position: relative;
   top: -101px;
-  z-index: -1;
 }
 #review {
   height: auto;
@@ -266,7 +266,6 @@ a {
   float: left;
   position: relative;
   top: -103px;
-  z-index: -2;
 }
 #QandA {
   height: auto;
@@ -274,6 +273,4 @@ a {
   float: left;
   position: relative;
   top: -60px;
-  left: -5%;
-  z-index: -3;
 }
